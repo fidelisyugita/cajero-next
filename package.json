@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker-build": "docker build -t cajero-next .",
+    "docker-run": "npm run docker-build && docker run -p 3000:3000 cajero-next"
   },
   "dependencies": {
     "next": "15.1.4",
